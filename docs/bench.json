@@ -1,0 +1,362 @@
+[
+ {
+  "preset": "conformity",
+  "noise": 0.0,
+  "kind": "herder",
+  "flag_rate": 1.0,
+  "n": 600,
+  "mean_pull": 0.23582516822141278
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.0,
+  "kind": "bayes",
+  "flag_rate": 0.0,
+  "n": 600,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.0,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.0,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.0,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.0,
+  "kind": "herder",
+  "flag_rate": 0.8833333333333333,
+  "n": 600,
+  "mean_pull": 0.23736355133722137
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.0,
+  "kind": "bayes",
+  "flag_rate": 0.0,
+  "n": 600,
+  "mean_pull": -0.07207070005691077
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.0,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.04001032300010693
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.0,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.0,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "naive",
+  "noise": 0.0,
+  "kind": "herder",
+  "flag_rate": 1.0,
+  "n": 600,
+  "mean_pull": 0.35
+ },
+ {
+  "preset": "naive",
+  "noise": 0.0,
+  "kind": "bayes",
+  "flag_rate": 0.0,
+  "n": 600,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "naive",
+  "noise": 0.0,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "naive",
+  "noise": 0.0,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "naive",
+  "noise": 0.0,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.05,
+  "kind": "herder",
+  "flag_rate": 0.4166666666666667,
+  "n": 600,
+  "mean_pull": 0.17642734719193626
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.05,
+  "kind": "bayes",
+  "flag_rate": 0.0033333333333333335,
+  "n": 600,
+  "mean_pull": -0.0006407642854178324
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.05,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.00292064901096821
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.05,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.0012251671287221452
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.05,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.00023541130695127547
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.05,
+  "kind": "herder",
+  "flag_rate": 0.2866666666666667,
+  "n": 600,
+  "mean_pull": 0.17170910382899152
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.05,
+  "kind": "bayes",
+  "flag_rate": 0.0,
+  "n": 600,
+  "mean_pull": -0.06294815283133444
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.05,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.03269887796533749
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.05,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.0002825387956023934
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.05,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -6.452146645649832e-05
+ },
+ {
+  "preset": "naive",
+  "noise": 0.05,
+  "kind": "herder",
+  "flag_rate": 1.0,
+  "n": 600,
+  "mean_pull": 0.517548891437534
+ },
+ {
+  "preset": "naive",
+  "noise": 0.05,
+  "kind": "bayes",
+  "flag_rate": 0.058333333333333334,
+  "n": 600,
+  "mean_pull": 0.04376232197799454
+ },
+ {
+  "preset": "naive",
+  "noise": 0.05,
+  "kind": "independent",
+  "flag_rate": 0.24,
+  "n": 300,
+  "mean_pull": 0.0945720798166453
+ },
+ {
+  "preset": "naive",
+  "noise": 0.05,
+  "kind": "stubborn",
+  "flag_rate": 0.043333333333333335,
+  "n": 300,
+  "mean_pull": 0.03940377313853321
+ },
+ {
+  "preset": "naive",
+  "noise": 0.05,
+  "kind": "deceiver",
+  "flag_rate": 0.006666666666666667,
+  "n": 300,
+  "mean_pull": -0.0003214541862438046
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.1,
+  "kind": "herder",
+  "flag_rate": 0.056666666666666664,
+  "n": 600,
+  "mean_pull": 0.10254847263331061
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.1,
+  "kind": "bayes",
+  "flag_rate": 0.0016666666666666668,
+  "n": 600,
+  "mean_pull": -0.0008695558676389406
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.1,
+  "kind": "independent",
+  "flag_rate": 0.01,
+  "n": 300,
+  "mean_pull": -0.003901866556890287
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.1,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.0014962796376178982
+ },
+ {
+  "preset": "conformity",
+  "noise": 0.1,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.0002470757663908342
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.1,
+  "kind": "herder",
+  "flag_rate": 0.06833333333333333,
+  "n": 600,
+  "mean_pull": 0.09844078328342146
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.1,
+  "kind": "bayes",
+  "flag_rate": 0.0,
+  "n": 600,
+  "mean_pull": -0.04470712112366198
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.1,
+  "kind": "independent",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -0.022763001072650814
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.1,
+  "kind": "stubborn",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": 0.001383146328419361
+ },
+ {
+  "preset": "martingale",
+  "noise": 0.1,
+  "kind": "deceiver",
+  "flag_rate": 0.0,
+  "n": 300,
+  "mean_pull": -3.144949154281743e-05
+ },
+ {
+  "preset": "naive",
+  "noise": 0.1,
+  "kind": "herder",
+  "flag_rate": 1.0,
+  "n": 600,
+  "mean_pull": 0.6800470695491277
+ },
+ {
+  "preset": "naive",
+  "noise": 0.1,
+  "kind": "bayes",
+  "flag_rate": 0.43,
+  "n": 600,
+  "mean_pull": 0.16170381521519853
+ },
+ {
+  "preset": "naive",
+  "noise": 0.1,
+  "kind": "independent",
+  "flag_rate": 0.87,
+  "n": 300,
+  "mean_pull": 0.3010056175924184
+ },
+ {
+  "preset": "naive",
+  "noise": 0.1,
+  "kind": "stubborn",
+  "flag_rate": 0.37,
+  "n": 300,
+  "mean_pull": 0.14540455552995457
+ },
+ {
+  "preset": "naive",
+  "noise": 0.1,
+  "kind": "deceiver",
+  "flag_rate": 0.0033333333333333335,
+  "n": 300,
+  "mean_pull": 0.0002568250427064421
+ }
+]
