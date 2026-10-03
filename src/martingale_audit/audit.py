@@ -41,6 +41,7 @@ class AuditResult:
     agents: Dict[str, AgentResult]
     groups: Dict[str, Dict[str, float]]
     steps: List[Step]
+    pooled: Dict[str, float] = field(default_factory=dict)
 
     def to_dict(self, with_paths: bool = True) -> dict:
         agents = {}
@@ -50,7 +51,7 @@ class AuditResult:
                 d.pop("path")
             agents[a] = d
         return {"config": self.config.__dict__, "alpha": self.alpha,
-                "agents": agents, "groups": self.groups}
+                "agents": agents, "groups": self.groups, "pooled": self.pooled}
 
     def table(self) -> str:
         rows = sorted(self.agents.values(), key=lambda r: -r.e_value)
@@ -65,6 +66,12 @@ class AuditResult:
             for g, d in sorted(self.groups.items(), key=lambda kv: -kv[1]["e_value"]):
                 out.append(f"| {g} | {int(d['n_agents'])} | {d['e_value']:.3g} "
                            f"| {'yes' if d['e_value'] >= 1 / self.alpha else ''} |")
+        if self.pooled:
+            p = self.pooled
+            out += ["", f"Swarm-level: {int(p['n_steps'])} counted steps "
+                        f"({int(p['toward'])} toward peers, {int(p['away'])} away, "
+                        f"{int(p['no_move'])} no move), e-value {p['e_value']:.3g}, "
+                        f"anytime p {p['p_value']:.3g}"]
         return "\n".join(out)
 
 
@@ -114,4 +121,16 @@ def audit(observations: Iterable[Observation],
             members[groups.get(a, "unknown")].append(r.e_value)
         group_out = {g: {"e_value": merge(v), "n_agents": float(len(v))}
                      for g, v in members.items()}
-    return AuditResult(config, alpha, results, group_out, steps)
+    # Swarm-level test: one bettor, every agent's counted steps in time order.
+    # Null: nobody in the swarm tends to move toward peers. Useful when each
+    # agent alone has too few steps to say anything.
+    pool = EProcess(max_bet=max_bet)
+    counted = [s for s in steps if s.counted]
+    for s in counted:
+        pool.update(s.x)
+    pooled = {"n_steps": float(pool.n), "e_value": pool.wealth, "p_value": pool.p_value,
+              "flagged": float(pool.rejected(alpha)),
+              "toward": float(sum(s.x > 0 for s in counted)),
+              "away": float(sum(s.x < 0 for s in counted)),
+              "no_move": float(sum(s.x == 0 for s in counted))}
+    return AuditResult(config, alpha, results, group_out, steps, pooled)

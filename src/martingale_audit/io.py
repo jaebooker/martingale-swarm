@@ -2,6 +2,7 @@
 from our field names to theirs, e.g. {"agent": "sender", "text": "content"}."""
 import gzip
 import json
+import re
 from datetime import datetime
 from itertools import islice
 from pathlib import Path
@@ -37,8 +38,11 @@ def parse_ts(value, fallback: float) -> float:
         return float(s)
     except ValueError:
         pass
+    s = s.replace("Z", "+00:00")
+    # Python < 3.11 only accepts 3 or 6 fractional digits.
+    s = re.sub(r"\.(\d+)", lambda m: "." + (m.group(1) + "000000")[:6], s, count=1)
     try:
-        return datetime.fromisoformat(s.replace("Z", "+00:00")).timestamp()
+        return datetime.fromisoformat(s).timestamp()
     except ValueError:
         return fallback
 
@@ -71,6 +75,31 @@ def load_hf(name: str, split: str = "train", config: Optional[str] = None,
     ds = load_dataset(name, config, split=split, streaming=True)
     rows = islice(ds, limit) if limit is not None else ds
     return to_messages(rows, mapping)
+
+
+def load_aivillage(chat_path: str, agents_path: str, room: Optional[str] = None,
+                   start: Optional[str] = None, end: Optional[str] = None,
+                   agents_only: bool = True) -> List[Message]:
+    """AI Village export (aidigestorg/ai-village): chat_messages.jsonl.gz joined
+    to agents.jsonl.gz for names and models. `room` is a room-id prefix."""
+    agents = {r["id"]: r for r in read_jsonl(agents_path)}
+    lo = parse_ts(start, float("-inf")) if start else float("-inf")
+    hi = parse_ts(end, float("inf")) if end else float("inf")
+    out = []
+    for r in read_jsonl(chat_path):
+        if agents_only and r.get("speaker_type") != "agent":
+            continue
+        if room and not str(r.get("room_id", "")).startswith(room):
+            continue
+        ts = parse_ts(str(r["created_at"]).replace(" ", "T") + "+00:00", 0.0)
+        if not lo <= ts < hi or not r.get("content"):
+            continue
+        a = agents.get(r.get("agent_speaker_id"), {})
+        out.append(Message(id=r["id"], ts=ts, agent=a.get("name", "unknown"),
+                           text=r["content"], channel=str(r["room_id"]),
+                           model=a.get("model_string")))
+    out.sort(key=lambda m: m.ts)
+    return out
 
 
 def peek(records: Iterable[dict], n: int = 3) -> str:

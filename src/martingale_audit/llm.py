@@ -27,6 +27,32 @@ class AnthropicLLM:
         return "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
 
 
+class OpenAICompatLLM:
+    """Any server that speaks the OpenAI chat-completions protocol: Ollama
+    (http://localhost:11434/v1), OpenRouter, Groq, vLLM, LM Studio. No SDK
+    needed. Set OPENAI_API_KEY if the server wants one."""
+
+    def __init__(self, model: str, base_url: str = "http://localhost:11434/v1",
+                 api_key: Optional[str] = None, timeout: float = 300.0):
+        self.name = model
+        self.base_url = base_url.rstrip("/")
+        self.api_key = api_key or os.environ.get("OPENAI_API_KEY", "")
+        self.timeout = timeout
+
+    def complete(self, prompt: str, max_tokens: int = 2000) -> str:
+        import urllib.request
+        body = json.dumps({"model": self.name, "max_tokens": max_tokens, "temperature": 0,
+                           "messages": [{"role": "user", "content": prompt}]}).encode()
+        headers = {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+        req = urllib.request.Request(f"{self.base_url}/chat/completions", data=body,
+                                     headers=headers)
+        with urllib.request.urlopen(req, timeout=self.timeout) as r:
+            data = json.loads(r.read())
+        return data["choices"][0]["message"]["content"] or ""
+
+
 class CachedLLM:
     """Disk cache keyed on (model, prompt). Extraction over a large transcript is
     the expensive step, so a crashed run should resume for free."""

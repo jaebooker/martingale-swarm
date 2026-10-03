@@ -16,6 +16,10 @@ def _mapping(arg):
 
 
 def _load(args):
+    if getattr(args, "aivillage_agents", None):
+        msgs = io.load_aivillage(args.input, args.aivillage_agents, room=args.room,
+                                 start=args.start, end=args.end)
+        return msgs[:args.limit] if args.limit else msgs
     if args.hf:
         return io.load_hf(args.hf, split=args.split, config=args.hf_config,
                           mapping=_mapping(args.mapping), limit=args.limit)
@@ -59,7 +63,11 @@ def cmd_peek(args):
 
 
 def _llm(args):
-    from .llm import AnthropicLLM, CachedLLM
+    from .llm import AnthropicLLM, CachedLLM, OpenAICompatLLM
+    if args.backend == "openai":
+        if not args.model:
+            sys.exit("--model is required with --backend openai (e.g. --model llama3.1:8b)")
+        return CachedLLM(OpenAICompatLLM(args.model, args.base_url), args.cache)
     return CachedLLM(AnthropicLLM(args.model), args.cache)
 
 
@@ -108,8 +116,16 @@ def main(argv=None):
         sp.add_argument("--split", default="train")
         sp.add_argument("--mapping", help='JSON, e.g. \'{"agent": "sender"}\'')
         sp.add_argument("--limit", type=int)
+        sp.add_argument("--aivillage-agents", help="agents.jsonl.gz; treats --input as "
+                        "the AI Village chat_messages.jsonl.gz")
+        sp.add_argument("--room", help="AI Village room id prefix")
+        sp.add_argument("--start", help="keep messages at or after this time (ISO)")
+        sp.add_argument("--end", help="keep messages before this time (ISO)")
 
     def llm_args(sp):
+        sp.add_argument("--backend", choices=["anthropic", "openai"], default="anthropic",
+                        help="'openai' = any OpenAI-compatible server, e.g. Ollama")
+        sp.add_argument("--base-url", default="http://localhost:11434/v1")
         sp.add_argument("--model")
         sp.add_argument("--cache", default=".cache/llm.jsonl")
 

@@ -16,6 +16,7 @@ class Adoption:
     evidence_free: bool        # no new evidence since the agent last spoke
     unsupported: bool          # nobody had offered any evidence on the claim yet
     peers_on_side: float       # share of peers already on that side
+    own_evidence: bool = False # this very message introduced evidence
     msg_id: str | None = None
 
 
@@ -43,6 +44,7 @@ def trace(observations: Iterable[Observation], evidence_threshold: float = 0.5,
                     evidence_free=last_evidence <= last_idx.get(o.agent, -1),
                     unsupported=last_evidence < 0,
                     peers_on_side=(sum(v == s for v in peers) / len(peers)) if peers else 0.0,
+                    own_evidence=o.evidence >= evidence_threshold,
                     msg_id=o.msg_id))
             if s != 0:
                 side[o.agent] = s
@@ -52,13 +54,23 @@ def trace(observations: Iterable[Observation], evidence_threshold: float = 0.5,
 
 
 def summary(adoptions: List[Adoption]) -> Dict[str, Dict[str, float]]:
-    """Per agent: how many side switches, and how many of them were evidence-free
-    moves onto the side most peers already held."""
+    """Per agent: side switches, how many were evidence-free moves onto the side
+    most peers already held, and how its first stances were formed.
+
+    `first_echo` counts first stances that joined a side a peer already held
+    while the message itself offered no evidence. `first_verified` counts first
+    stances that came with the agent's own evidence."""
     agg: Dict[str, Dict[str, float]] = defaultdict(lambda: {
         "switches": 0, "evidence_free_switches": 0, "joined_majority_without_evidence": 0,
-        "originated": 0})
+        "originated": 0, "first_stances": 0, "first_echo": 0, "first_verified": 0})
     for a in adoptions:
         d = agg[a.agent]
+        if not a.switched:
+            d["first_stances"] += 1
+            if a.own_evidence:
+                d["first_verified"] += 1
+            elif a.peers_on_side > 0.0:
+                d["first_echo"] += 1
         if a.switched:
             d["switches"] += 1
             if a.evidence_free:

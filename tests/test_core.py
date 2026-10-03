@@ -143,3 +143,32 @@ def test_cascade_marks_evidence_free_switch():
     assert mine[-1].switched and mine[-1].evidence_free and mine[-1].peers_on_side == 1.0
     assert cascade.summary(ad)["me"]["joined_majority_without_evidence"] == 1
     assert cascade.summary(ad)["a"]["originated"] == 1
+
+
+def test_pooled_counts_and_first_stance_summary():
+    rows = [("a", 0.9, 1), ("b", 0.9, 0), ("me", 0.7, 0), ("me", 0.9, 0)]
+    res = audit(_obs(rows), StepConfig(gate=True, ref_lag=0))
+    assert res.pooled["toward"] == 1 and res.pooled["away"] == 0
+    s = cascade.summary(cascade.trace(_obs(rows)))
+    assert s["a"]["first_verified"] == 1 and s["b"]["first_echo"] == 1
+
+
+def test_parse_ts_handles_odd_fraction_lengths():
+    from martingale_audit.io import parse_ts
+    a = parse_ts("2026-03-06T18:36:13.31047+00:00", -1.0)
+    b = parse_ts("2026-03-06T18:36:13.310470+00:00", -1.0)
+    assert a == b and a > 0
+
+
+def test_pilot_data_loads_and_is_consistent():
+    import json as _json
+    from pathlib import Path
+    from martingale_audit.io import load_observations
+    d = Path(__file__).resolve().parents[1] / "data" / "ai_village_saboteur"
+    obs = load_observations(str(d / "observations.jsonl"))
+    claims = _json.loads((d / "claims.json").read_text())
+    groups = _json.loads((d / "groups.json").read_text())
+    assert len(obs) == 285
+    assert {o.claim for o in obs} == set(claims)
+    assert {o.agent for o in obs} <= set(groups)
+    assert {o.belief for o in obs} <= {0.1, 0.3, 0.5, 0.7, 0.9}
