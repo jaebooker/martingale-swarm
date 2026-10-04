@@ -3,7 +3,7 @@ from our field names to theirs, e.g. {"agent": "sender", "text": "content"}."""
 import gzip
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from itertools import islice
 from pathlib import Path
 from typing import Dict, Iterable, Iterator, List, Optional
@@ -42,7 +42,8 @@ def parse_ts(value, fallback: float) -> float:
     # Python < 3.11 only accepts 3 or 6 fractional digits.
     s = re.sub(r"\.(\d+)", lambda m: "." + (m.group(1) + "000000")[:6], s, count=1)
     try:
-        return datetime.fromisoformat(s).timestamp()
+        dt = datetime.fromisoformat(s)
+        return (dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)).timestamp()
     except ValueError:
         return fallback
 
@@ -91,7 +92,7 @@ def load_aivillage(chat_path: str, agents_path: str, room: Optional[str] = None,
             continue
         if room and not str(r.get("room_id", "")).startswith(room):
             continue
-        ts = parse_ts(str(r["created_at"]).replace(" ", "T") + "+00:00", 0.0)
+        ts = parse_ts(r["created_at"], 0.0)
         if not lo <= ts < hi or not r.get("content"):
             continue
         a = agents.get(r.get("agent_speaker_id"), {})

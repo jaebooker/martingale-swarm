@@ -1,22 +1,25 @@
-"""Run the test for every agent and pool by group."""
+"""Compute transcript scores and conditional-null betting diagnostics.
+
+The betting theorem does not verify its assumptions for extracted labels.
+See docs/STATISTICAL_VALIDITY.md before interpreting these as inference.
+"""
 from collections import defaultdict
 from dataclasses import dataclass, field
-from typing import Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional
 
-from .etest import EProcess, e_bh, merge
+from .etest import EProcess, _check_alpha, e_bh, merge
 from .schema import Observation
 from .trajectories import Step, StepConfig, build_steps
 
 PRESETS: Dict[str, StepConfig] = {
-    # Headline test. Null: in evidence-free intervals the agent is no more likely
-    # to move toward its peers than away. Rejection = conformity.
+    # Exploratory sign score. A conditional no-toward-drift null is needed
+    # separately; lack of an evidence label does not establish that null.
     "conformity": StepConfig(peer_time="current", gate=True, ref_lag=1, statistic="sign"),
-    # Strict test. Null: the belief sequence is a martingale. Rejection =
-    # movement that was predictable from where the peers already stood.
+    # Lagged magnitude score. The conditional null must hold for observed
+    # scores in the bettor's filtration, not merely for a latent belief.
     "martingale": StepConfig(peer_time="previous", gate=False, ref_lag=1,
                              statistic="magnitude"),
-    # The conformity test without the noise correction. Kept so the benchmark
-    # can show what goes wrong. Do not report results from it.
+    # Unlagged sensitivity score, vulnerable to same-reading noise coupling.
     "naive": StepConfig(peer_time="current", gate=True, ref_lag=0, statistic="sign"),
 }
 
@@ -26,7 +29,7 @@ class AgentResult:
     agent: str
     n_steps: int                 # steps that counted
     e_value: float               # wealth at the end
-    p_value: float               # anytime-valid
+    p_value: float               # anytime-valid only under the conditional score null
     flagged: bool                # crossed 1/alpha at some point (Ville)
     discovery: bool = False      # survives e-BH across all agents
     pull: Optional[float] = None # share of the gap to peers closed per counted step
@@ -41,7 +44,7 @@ class AuditResult:
     agents: Dict[str, AgentResult]
     groups: Dict[str, Dict[str, float]]
     steps: List[Step]
-    pooled: Dict[str, float] = field(default_factory=dict)
+    pooled: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self, with_paths: bool = True) -> dict:
         agents = {}
@@ -55,7 +58,8 @@ class AuditResult:
 
     def table(self) -> str:
         rows = sorted(self.agents.values(), key=lambda r: -r.e_value)
-        out = ["| agent | steps | e-value | p (anytime) | pull | flagged | e-BH |",
+        out = ["Conditional-null diagnostics; assumptions for extracted labels are unverified.",
+               "", "| agent | steps | e-value | p (conditional anytime) | pull | flagged | e-BH |",
                "|---|---:|---:|---:|---:|:-:|:-:|"]
         for r in rows:
             pull = "" if r.pull is None else f"{r.pull:+.2f}"
@@ -68,10 +72,13 @@ class AuditResult:
                            f"| {'yes' if d['e_value'] >= 1 / self.alpha else ''} |")
         if self.pooled:
             p = self.pooled
-            out += ["", f"Swarm-level: {int(p['n_steps'])} counted steps "
+            out += ["", f"Swarm summary: {int(p['n_steps'])} counted steps "
                         f"({int(p['toward'])} toward peers, {int(p['away'])} away, "
-                        f"{int(p['no_move'])} no move), e-value {p['e_value']:.3g}, "
-                        f"anytime p {p['p_value']:.3g}"]
+                        f"{int(p['no_move'])} no move). Mean terminal agent wealth "
+                        f"{p['e_value']:.3g}; inverse mean {p['p_value']:.3g} "
+                        "(fixed-horizon conditional p-value).",
+                    f"Concatenated wealth {p['diagnostic_concatenated_wealth']:.3g} "
+                    "is descriptive only; cross-agent dependence is not corrected."]
         return "\n".join(out)
 
 
@@ -82,9 +89,16 @@ def audit(observations: Iterable[Observation],
           max_bet: Optional[float] = None) -> AuditResult:
     """`groups` maps agent -> group name (for example its model family).
 
-    `max_bet` caps the stake. Any value below 1 is valid. The default is 0.5 for
+    `max_bet` caps the stake in (0, 1). The default is 0.5 for
     the sign statistic, where one wrong call costs the full stake, and 0.9 for
-    the magnitude statistic, where moves are small and a low cap wastes power."""
+    the magnitude statistic, where moves are small and a low cap wastes power.
+
+    Per-agent guarantees require a conditional-null score sequence. The pooled
+    headline averages current per-agent wealth, not interleaved increments.
+    Its inverse is a fixed-horizon conditional p-value for a prespecified
+    agent family. Extracted labels do not establish these assumptions.
+    """
+    _check_alpha(alpha)
     if max_bet is None:
         max_bet = 0.5 if config.statistic == "sign" else 0.9
     observations = list(observations)
@@ -121,15 +135,19 @@ def audit(observations: Iterable[Observation],
             members[groups.get(a, "unknown")].append(r.e_value)
         group_out = {g: {"e_value": merge(v), "n_agents": float(len(v))}
                      for g, v in members.items()}
-    # Swarm-level test: one bettor, every agent's counted steps in time order.
-    # Null: nobody in the swarm tends to move toward peers. Useful when each
-    # agent alone has too few steps to say anything.
+    # Diagnostic only: interleaving increments requires a conditional null in
+    # the pooled filtration. Correlated agent updates do not establish it.
     pool = EProcess(max_bet=max_bet)
     counted = [s for s in steps if s.counted]
     for s in counted:
         pool.update(s.x)
-    pooled = {"n_steps": float(pool.n), "e_value": pool.wealth, "p_value": pool.p_value,
-              "flagged": float(pool.rejected(alpha)),
+    mean_wealth = merge(r.e_value for r in results.values())
+    pooled = {"n_steps": float(pool.n), "n_agents": float(len(results)),
+              "e_value": mean_wealth, "p_value": min(1.0, 1.0 / mean_wealth) if mean_wealth else 1.0,
+              "flagged": float(mean_wealth >= 1.0 / alpha),
+              "scope": "fixed_horizon_mean_of_terminal_agent_e_values",
+              "inference": "conditional_score_null_and_prespecified_family_required; unverified_for_extracted_labels",
+              "diagnostic_concatenated_wealth": pool.wealth,
               "toward": float(sum(s.x > 0 for s in counted)),
               "away": float(sum(s.x < 0 for s in counted)),
               "no_move": float(sum(s.x == 0 for s in counted))}

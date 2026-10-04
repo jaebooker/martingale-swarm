@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "martingale-audit"
-version = "0.1.0"
-description = "Anytime-valid herding audits for multi-agent transcripts"
+version = "0.2.0"
+description = "Swarm trace audits with conditional betting tests and solver-checked kernel obligations"
 requires-python = ">=3.10"
 dependencies = []
 
@@ -14,6 +14,7 @@ llm = ["anthropic"]
 hf = ["datasets"]
 plot = ["matplotlib"]
 dev = ["pytest"]
+verify = ["z3-solver>=4.12"]
 
 [project.scripts]
 martingale-audit = "martingale_audit.cli:main"

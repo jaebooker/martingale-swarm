@@ -38,6 +38,7 @@ class OpenAICompatLLM:
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key or os.environ.get("OPENAI_API_KEY", "")
         self.timeout = timeout
+        self.cache_identity = f"openai-compatible:{self.base_url}:{self.name}"
 
     def complete(self, prompt: str, max_tokens: int = 2000) -> str:
         import urllib.request
@@ -50,6 +51,9 @@ class OpenAICompatLLM:
                                      headers=headers)
         with urllib.request.urlopen(req, timeout=self.timeout) as r:
             data = json.loads(r.read())
+        choice = data["choices"][0]
+        if choice.get("finish_reason") == "length":
+            raise ValueError("Model output was truncated; reduce batch size or increase max_tokens")
         return data["choices"][0]["message"]["content"] or ""
 
 
@@ -69,7 +73,8 @@ class CachedLLM:
                     self._cache[rec["k"]] = rec["v"]
 
     def complete(self, prompt: str, max_tokens: int = 2000) -> str:
-        key = hashlib.sha256(f"{self.name}\0{max_tokens}\0{prompt}".encode()).hexdigest()
+        identity = getattr(self.inner, "cache_identity", f"{type(self.inner).__name__}:{self.name}")
+        key = hashlib.sha256(f"{identity}\0{max_tokens}\0{prompt}".encode()).hexdigest()
         if key not in self._cache:
             value = self.inner.complete(prompt, max_tokens)
             self._cache[key] = value

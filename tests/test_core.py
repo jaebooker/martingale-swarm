@@ -131,9 +131,13 @@ def test_llm_extractor_parses_and_filters():
     assert [(o.agent, o.belief, o.evidence) for o in obs] == [("a", 0.9, 1.0), ("b", 0.8, 0.0)]
 
 
-def test_llm_extractor_survives_garbage():
+def test_llm_extractor_reports_garbage():
     msgs = [Message("1", 1, "a", "x")]
-    assert LLMExtractor(FakeLLM("sorry, no")).extract(msgs, {"c01": "y"}) == []
+    with pytest.raises(ValueError, match="JSON"):
+        LLMExtractor(FakeLLM("sorry, no"), strict=True).extract(msgs, {"c01": "y"})
+    lenient = LLMExtractor(FakeLLM("sorry, no"))
+    assert lenient.extract(msgs, {"c01": "y"}) == []
+    assert len(lenient.failures) == 1 and lenient.failures[0]["messages"] == 1
 
 
 def test_cascade_marks_evidence_free_switch():

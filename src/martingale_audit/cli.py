@@ -80,9 +80,45 @@ def cmd_claims(args):
 
 def cmd_extract(args):
     claims = json.loads(Path(args.claims).read_text())
-    obs = LLMExtractor(_llm(args), batch_size=args.batch_size).extract(_load(args), claims)
+    ex = LLMExtractor(_llm(args), batch_size=args.batch_size, strict=args.strict)
+    obs = ex.extract(_load(args), claims)
     io.save_jsonl(obs, args.out)
     print(f"{len(obs)} observations -> {args.out}")
+    if ex.failures:
+        fail_path = str(args.out) + ".failures.json"
+        Path(fail_path).write_text(json.dumps(ex.failures, indent=1))
+        print(f"WARNING: {len(ex.failures)} batches had unusable model output and were "
+              f"skipped ({sum(f['messages'] for f in ex.failures)} messages). See {fail_path}.",
+              file=sys.stderr)
+
+
+def cmd_verify(args):
+    from .verification import verify_betting_kernel, verify_trace
+    report = {}
+    if args.observations:
+        report["trace"] = verify_trace(io.load_observations(args.observations))
+        s = report["trace"]["summary"]
+        print(f"trace policy: {s['policy_status']}; {s['adoptions_checked']} adoptions checked, "
+              f"{s['unsupported_adoptions']} without annotated evidence, "
+              f"{s['ambiguous_adoptions']} ambiguous, {s['integrity_issues']} integrity issues")
+        for f in report["trace"]["findings"]:
+            if f["kind"] == "unsupported_stance_adoption":
+                w = f["witness"][-1]
+                print(f"  review: {w['claim']}  {w['agent']}  belief {w['belief']}  msg {w['msg_id']}")
+    if args.kernel:
+        report["kernel"] = verify_betting_kernel()
+        print(f"betting kernel: {report['kernel']['status']}")
+    if args.out:
+        Path(args.out).write_text(json.dumps(report, indent=1))
+
+
+def cmd_compare(args):
+    from .evaluation import compare_labels
+    rep = compare_labels(io.load_observations(args.reference), io.load_observations(args.predicted))
+    print(json.dumps({k: v for k, v in rep.items()
+                      if k not in ("disagreements", "missing_reference_pairs")}, indent=1))
+    if args.out:
+        Path(args.out).write_text(json.dumps(rep, indent=1))
 
 
 def cmd_audit(args):
@@ -157,8 +193,22 @@ def main(argv=None):
     llm_args(sp)
     sp.add_argument("--claims", default="claims.json")
     sp.add_argument("--batch-size", type=int, default=20)
+    sp.add_argument("--strict", action="store_true",
+                    help="stop at the first unusable model reply instead of skipping the batch")
     sp.add_argument("--out", default="observations.jsonl")
     sp.set_defaults(fn=cmd_extract)
+
+    sp = sub.add_parser("verify", help="trace-policy check and solver-checked kernel obligations")
+    sp.add_argument("observations", nargs="?")
+    sp.add_argument("--kernel", action="store_true", help="run the Z3 obligations (needs z3-solver)")
+    sp.add_argument("--out")
+    sp.set_defaults(fn=cmd_verify)
+
+    sp = sub.add_parser("compare", help="agreement between two label files")
+    sp.add_argument("reference")
+    sp.add_argument("predicted")
+    sp.add_argument("--out")
+    sp.set_defaults(fn=cmd_compare)
 
     sp = sub.add_parser("audit", help="run the herding test on extracted beliefs")
     sp.add_argument("observations")

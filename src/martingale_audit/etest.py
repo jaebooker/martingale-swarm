@@ -19,9 +19,12 @@ and no correction for peeking.
 
 The staking rule is aGRAPA (Waudby-Smith & Ramdas, "Estimating means of bounded
 random variables by betting", 2023), truncated to one-sided bets. The rule only
-affects power. Validity needs nothing more than lam_t being fixed before x_t is seen.
+affects power. Validity requires the conditional null above as well as a
+predictable, bounded stake. This module does not establish that null for
+extracted transcript scores or noisy measurements of an underlying belief.
 """
 import math
+import sys
 from typing import Dict, Iterable, List
 
 
@@ -29,6 +32,8 @@ class EProcess:
     def __init__(self, max_bet: float = 0.5, prior_var: float = 0.25):
         if not 0.0 < max_bet < 1.0:
             raise ValueError("max_bet must be in (0, 1) so wealth stays positive")
+        if not math.isfinite(prior_var) or prior_var <= 0:
+            raise ValueError("prior_var must be positive and finite")
         self.max_bet = max_bet
         self.prior_var = prior_var
         self.n = 0
@@ -67,26 +72,47 @@ class EProcess:
 
     @property
     def wealth(self) -> float:
-        """E-value if you stop now. Valid at any stopping time."""
-        return math.exp(self.log_wealth)
+        """Conditional-null e-value; log wealth remains usable after overflow."""
+        return _exp_wealth(self.log_wealth)
 
     @property
     def max_wealth(self) -> float:
-        return math.exp(self.max_log_wealth)
+        """Running maximum for the p-value; this maximum is NOT an e-value."""
+        return _exp_wealth(self.max_log_wealth)
 
     @property
     def p_value(self) -> float:
-        """Anytime-valid p-value: 1 / (largest wealth reached so far)."""
+        """Anytime-valid under the conditional null: inverse running maximum."""
         return min(1.0, math.exp(-self.max_log_wealth))
 
     def rejected(self, alpha: float = 0.05) -> bool:
+        _check_alpha(alpha)
         return self.max_log_wealth >= math.log(1.0 / alpha)
+
+
+def _exp_wealth(log_wealth: float) -> float:
+    return math.exp(log_wealth) if log_wealth <= math.log(sys.float_info.max) else math.inf
+
+
+def _check_alpha(alpha: float) -> None:
+    if not 0.0 < alpha < 1.0:
+        raise ValueError("alpha must be in (0, 1)")
+
+
+def _check_e_values(values: Iterable[float]) -> List[float]:
+    vals = list(values)
+    if any(math.isnan(v) or v < 0 for v in vals):
+        raise ValueError("e-values must be nonnegative and not NaN")
+    return vals
 
 
 def e_bh(e_values: Dict[str, float], alpha: float = 0.05) -> List[str]:
     """e-BH (Wang & Ramdas 2022). Controls the false discovery rate at alpha
-    under arbitrary dependence between the e-values, which matters here because
-    agents in one swarm are anything but independent."""
+    for one application to valid e-values from a prespecified family, under
+    arbitrary cross-hypothesis dependence. Repeatedly unioning discoveries is
+    not covered. Running maximum wealth must not be supplied as an e-value."""
+    _check_alpha(alpha)
+    _check_e_values(e_values.values())
     items = sorted(e_values.items(), key=lambda kv: -kv[1])
     n = len(items)
     k_star = 0
@@ -97,7 +123,11 @@ def e_bh(e_values: Dict[str, float], alpha: float = 0.05) -> List[str]:
 
 
 def merge(e_values: Iterable[float]) -> float:
-    """The mean of e-values is an e-value, whatever their dependence. Used to
-    pool agents into a group (a model family, a team)."""
-    vals = list(e_values)
-    return sum(vals) / len(vals) if vals else 1.0
+    """Mean of valid terminal e-values for a prespecified family.
+
+    Valid under arbitrary dependence. This cannot repair invalid component
+    e-values, adaptive membership, or the use of running maxima as inputs.
+    Empty input returns the neutral value 1.
+    """
+    vals = _check_e_values(e_values)
+    return sum(v / len(vals) for v in vals) if vals else 1.0

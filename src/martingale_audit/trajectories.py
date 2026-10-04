@@ -14,8 +14,9 @@ peer_time
                 k-th statement. Catches immediate conformity.
     "previous"  m is the peer mean just before the agent's (k-1)-th statement, so
                 the direction was already fixed when the agent last spoke. With
-                gate=False this is a test of the martingale property itself:
-                a Bayesian's future movement cannot be predicted from the past.
+                gate=False, magnitude scores can test a conditional-mean null
+                if observed beliefs are martingales in the bettor's filtration.
+                Asynchronous statements and extraction noise do not guarantee this.
 
 gate
     If True, a step counts only when nobody (the agent included) introduced new
@@ -28,18 +29,21 @@ ref_lag
     1 uses p_{k-2}. Beliefs are extracted with error, and p_{k-1} appears in
     delta with a minus sign, so with ref_lag=0 extraction noise alone makes x
     positive on average (regression to the mean looks like herding). ref_lag=1
-    removes that artefact for noise that is independent across statements.
+    separates the readings used for direction and movement. This can reduce
+    same-reading coupling, but overlapping increments still have conditional
+    dependence even with independent measurement noise. It is a sensitivity
+    choice, not a proof of noise robustness or an anytime error guarantee.
 
 statistic
     "sign"       x = direction * sign(delta), ignoring moves smaller than
                  `min_move`. Null: a move is no more likely to be toward the
                  peers than away from them. Uses only the direction of each
-                 move, which is the part of an extracted belief you can trust,
-                 and it has far more power against slow drift.
+                 move. This may be useful for ordinal labels, but remains
+                 dependent on extraction and an unverified conditional null.
     "magnitude"  x = direction * delta. Null: the expected move toward the peers
-                 is not positive. This is the one that corresponds to the
-                 martingale property, since a Bayesian may well make many small
-                 moves one way and a rare large move the other.
+                 is not positive. A latent-belief martingale does not imply
+                 this property for noisy extracted labels. A martingale can
+                 also make many small moves one way and rare large moves back.
 """
 from collections import defaultdict
 from dataclasses import dataclass
