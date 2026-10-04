@@ -1,7 +1,7 @@
 # Martingale Audit: who in the swarm moves on evidence, and who moves on each other
 
 **Team:** Jaeson Booker (jaesonbooker@gmail.com)
-**Code:** [GITHUB URL]
+**Code:** https://github.com/jaebooker/martingale-swarm 
 **Data:** AI Village chat log, 5 to 13 March 2026
 
 ## The question
