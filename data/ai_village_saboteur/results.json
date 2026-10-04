@@ -1,0 +1,527 @@
+{
+ "conformity (noise-robust, ref_lag=1)": {
+  "config": {
+   "peer_time": "current",
+   "gate": true,
+   "ref_lag": 1,
+   "evidence_threshold": 0.5,
+   "min_gap": 0.02,
+   "statistic": "sign",
+   "min_move": 0.02
+  },
+  "alpha": 0.05,
+  "agents": {
+   "Claude Haiku 4.5": {
+    "agent": "Claude Haiku 4.5",
+    "n_steps": 2,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.5": {
+    "agent": "Claude Opus 4.5",
+    "n_steps": 6,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.15645371577574976,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.6": {
+    "agent": "Claude Opus 4.6",
+    "n_steps": 7,
+    "e_value": 1.5,
+    "p_value": 0.6666666666666666,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.28742514970059874,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.5": {
+    "agent": "Claude Sonnet 4.5",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.6": {
+    "agent": "Claude Sonnet 4.6",
+    "n_steps": 4,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "DeepSeek-V3.2": {
+    "agent": "DeepSeek-V3.2",
+    "n_steps": 2,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "GPT-5": {
+    "agent": "GPT-5",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "GPT-5.1": {
+    "agent": "GPT-5.1",
+    "n_steps": 3,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.3218390804597701,
+    "first_flag_ts": null
+   },
+   "GPT-5.2": {
+    "agent": "GPT-5.2",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "Gemini 2.5 Pro": {
+    "agent": "Gemini 2.5 Pro",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.9999999999999967,
+    "first_flag_ts": null
+   },
+   "Gemini 3 Pro": {
+    "agent": "Gemini 3 Pro",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Gemini 3.1 Pro": {
+    "agent": "Gemini 3.1 Pro",
+    "n_steps": 6,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Opus 4.5 (Claude Code)": {
+    "agent": "Opus 4.5 (Claude Code)",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   }
+  },
+  "groups": {
+   "Anthropic": {
+    "e_value": 1.0833333333333333,
+    "n_agents": 6.0
+   },
+   "DeepSeek": {
+    "e_value": 1.0,
+    "n_agents": 1.0
+   },
+   "OpenAI": {
+    "e_value": 1.0,
+    "n_agents": 3.0
+   },
+   "Google": {
+    "e_value": 1.0,
+    "n_agents": 3.0
+   }
+  },
+  "pooled": {
+   "n_steps": 33.0,
+   "n_agents": 13.0,
+   "e_value": 1.038461538461538,
+   "p_value": 0.9629629629629632,
+   "flagged": 0.0,
+   "scope": "fixed_horizon_mean_of_terminal_agent_e_values",
+   "inference": "conditional_score_null_and_prespecified_family_required; unverified_for_extracted_labels",
+   "diagnostic_concatenated_wealth": 5.0625,
+   "toward": 5.0,
+   "away": 0.0,
+   "no_move": 28.0
+  }
+ },
+ "conformity, ref_lag=0 (upper bound, see README)": {
+  "config": {
+   "peer_time": "current",
+   "gate": true,
+   "ref_lag": 0,
+   "evidence_threshold": 0.5,
+   "min_gap": 0.02,
+   "statistic": "sign",
+   "min_move": 0.02
+  },
+  "alpha": 0.05,
+  "agents": {
+   "Claude Haiku 4.5": {
+    "agent": "Claude Haiku 4.5",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.5": {
+    "agent": "Claude Opus 4.5",
+    "n_steps": 7,
+    "e_value": 1.5,
+    "p_value": 0.6666666666666666,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.4771371769383701,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.6": {
+    "agent": "Claude Opus 4.6",
+    "n_steps": 10,
+    "e_value": 2.25,
+    "p_value": 0.4444444444444444,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.3320158102766798,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.5": {
+    "agent": "Claude Sonnet 4.5",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.0,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.6": {
+    "agent": "Claude Sonnet 4.6",
+    "n_steps": 6,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.22706794016939993,
+    "first_flag_ts": null
+   },
+   "DeepSeek-V3.2": {
+    "agent": "DeepSeek-V3.2",
+    "n_steps": 6,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "GPT-5": {
+    "agent": "GPT-5",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "GPT-5.1": {
+    "agent": "GPT-5.1",
+    "n_steps": 3,
+    "e_value": 1.5,
+    "p_value": 0.6666666666666666,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.7671232876712327,
+    "first_flag_ts": null
+   },
+   "GPT-5.2": {
+    "agent": "GPT-5.2",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "Gemini 2.5 Pro": {
+    "agent": "Gemini 2.5 Pro",
+    "n_steps": 2,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.7999999999999996,
+    "first_flag_ts": null
+   },
+   "Gemini 3 Pro": {
+    "agent": "Gemini 3 Pro",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "Gemini 3.1 Pro": {
+    "agent": "Gemini 3.1 Pro",
+    "n_steps": 7,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Opus 4.5 (Claude Code)": {
+    "agent": "Opus 4.5 (Claude Code)",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.0000000000000002,
+    "first_flag_ts": null
+   }
+  },
+  "groups": {
+   "Anthropic": {
+    "e_value": 1.2916666666666667,
+    "n_agents": 6.0
+   },
+   "DeepSeek": {
+    "e_value": 1.0,
+    "n_agents": 1.0
+   },
+   "OpenAI": {
+    "e_value": 1.1666666666666665,
+    "n_agents": 3.0
+   },
+   "Google": {
+    "e_value": 1.0,
+    "n_agents": 3.0
+   }
+  },
+  "pooled": {
+   "n_steps": 44.0,
+   "n_agents": 13.0,
+   "e_value": 1.173076923076923,
+   "p_value": 0.8524590163934428,
+   "flagged": 0.0,
+   "scope": "fixed_horizon_mean_of_terminal_agent_e_values",
+   "inference": "conditional_score_null_and_prespecified_family_required; unverified_for_extracted_labels",
+   "diagnostic_concatenated_wealth": 36.96476862980772,
+   "toward": 12.0,
+   "away": 1.0,
+   "no_move": 31.0
+  }
+ },
+ "no evidence gate, ref_lag=0": {
+  "config": {
+   "peer_time": "current",
+   "gate": false,
+   "ref_lag": 0,
+   "evidence_threshold": 0.5,
+   "min_gap": 0.02,
+   "statistic": "sign",
+   "min_move": 0.02
+  },
+  "alpha": 0.05,
+  "agents": {
+   "Claude Haiku 4.5": {
+    "agent": "Claude Haiku 4.5",
+    "n_steps": 11,
+    "e_value": 2.25,
+    "p_value": 0.4444444444444444,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.686204431736955,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.5": {
+    "agent": "Claude Opus 4.5",
+    "n_steps": 19,
+    "e_value": 17.08593750000001,
+    "p_value": 0.05852766346593503,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.8250572956455311,
+    "first_flag_ts": null
+   },
+   "Claude Opus 4.6": {
+    "agent": "Claude Opus 4.6",
+    "n_steps": 15,
+    "e_value": 3.375,
+    "p_value": 0.2962962962962963,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.3988062940857298,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.5": {
+    "agent": "Claude Sonnet 4.5",
+    "n_steps": 4,
+    "e_value": 2.25,
+    "p_value": 0.4444444444444444,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.2435233160621764,
+    "first_flag_ts": null
+   },
+   "Claude Sonnet 4.6": {
+    "agent": "Claude Sonnet 4.6",
+    "n_steps": 15,
+    "e_value": 11.390625000000005,
+    "p_value": 0.08779149519890257,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.3301272652630347,
+    "first_flag_ts": null
+   },
+   "DeepSeek-V3.2": {
+    "agent": "DeepSeek-V3.2",
+    "n_steps": 8,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.8668730650154799,
+    "first_flag_ts": null
+   },
+   "GPT-5": {
+    "agent": "GPT-5",
+    "n_steps": 0,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": null,
+    "first_flag_ts": null
+   },
+   "GPT-5.1": {
+    "agent": "GPT-5.1",
+    "n_steps": 5,
+    "e_value": 2.25,
+    "p_value": 0.4444444444444444,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.7777777777777776,
+    "first_flag_ts": null
+   },
+   "GPT-5.2": {
+    "agent": "GPT-5.2",
+    "n_steps": 1,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.0,
+    "first_flag_ts": null
+   },
+   "Gemini 2.5 Pro": {
+    "agent": "Gemini 2.5 Pro",
+    "n_steps": 14,
+    "e_value": 5.695312500000001,
+    "p_value": 0.13168724279835387,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.7078030369525147,
+    "first_flag_ts": null
+   },
+   "Gemini 3 Pro": {
+    "agent": "Gemini 3 Pro",
+    "n_steps": 2,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.9999999999999996,
+    "first_flag_ts": null
+   },
+   "Gemini 3.1 Pro": {
+    "agent": "Gemini 3.1 Pro",
+    "n_steps": 13,
+    "e_value": 1.0,
+    "p_value": 1.0,
+    "flagged": false,
+    "discovery": false,
+    "pull": 0.09015777610818934,
+    "first_flag_ts": null
+   },
+   "Opus 4.5 (Claude Code)": {
+    "agent": "Opus 4.5 (Claude Code)",
+    "n_steps": 6,
+    "e_value": 3.375,
+    "p_value": 0.2962962962962963,
+    "flagged": false,
+    "discovery": false,
+    "pull": 1.1666666666666665,
+    "first_flag_ts": null
+   }
+  },
+  "groups": {
+   "Anthropic": {
+    "e_value": 6.621093750000003,
+    "n_agents": 6.0
+   },
+   "DeepSeek": {
+    "e_value": 1.0,
+    "n_agents": 1.0
+   },
+   "OpenAI": {
+    "e_value": 1.4166666666666665,
+    "n_agents": 3.0
+   },
+   "Google": {
+    "e_value": 2.565104166666667,
+    "n_agents": 3.0
+   }
+  },
+  "pooled": {
+   "n_steps": 113.0,
+   "n_agents": 13.0,
+   "e_value": 4.051682692307694,
+   "p_value": 0.24681103530109746,
+   "flagged": 0.0,
+   "scope": "fixed_horizon_mean_of_terminal_agent_e_values",
+   "inference": "conditional_score_null_and_prespecified_family_required; unverified_for_extracted_labels",
+   "diagnostic_concatenated_wealth": 4664812.072896524,
+   "toward": 44.0,
+   "away": 3.0,
+   "no_move": 66.0
+  }
+ }
+}

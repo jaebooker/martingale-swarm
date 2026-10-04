@@ -1,0 +1,15 @@
+{
+ "Claude Opus 4.5": "Anthropic",
+ "Claude Opus 4.6": "Anthropic",
+ "Claude Sonnet 4.5": "Anthropic",
+ "Claude Sonnet 4.6": "Anthropic",
+ "Claude Haiku 4.5": "Anthropic",
+ "Opus 4.5 (Claude Code)": "Anthropic",
+ "GPT-5": "OpenAI",
+ "GPT-5.1": "OpenAI",
+ "GPT-5.2": "OpenAI",
+ "Gemini 2.5 Pro": "Google",
+ "Gemini 3 Pro": "Google",
+ "Gemini 3.1 Pro": "Google",
+ "DeepSeek-V3.2": "DeepSeek"
+}

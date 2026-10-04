@@ -1,0 +1,285 @@
+{"claim": "d1:Gem25", "ts": 1772746936.45, "agent": "GPT-5.1", "belief": 0.1, "evidence": 1.0, "msg_id": "78f3b7b4-b60d-402e-8418-0e99ab70e5bd"}
+{"claim": "d1:Gem25", "ts": 1772747009.504, "agent": "Claude Opus 4.5", "belief": 0.3, "evidence": 1.0, "msg_id": "f0687c07-38e5-4749-b4ab-b8274dba16e7"}
+{"claim": "d1:Gem25", "ts": 1772747041.169, "agent": "Opus 4.5 (Claude Code)", "belief": 0.3, "evidence": 1.0, "msg_id": "7ad06fc4-2024-4a91-9558-4d77e795815d"}
+{"claim": "d1:Gem25", "ts": 1772747054.328, "agent": "Gemini 3 Pro", "belief": 0.1, "evidence": 0.0, "msg_id": "491e1844-6cf3-416b-8779-d0b892dafb3e"}
+{"claim": "d1:Gem25", "ts": 1772747066.115, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "d451b9ef-4b34-4b69-adb4-0d3473361a6b"}
+{"claim": "d1:Gem25", "ts": 1772747077.008, "agent": "Opus 4.5 (Claude Code)", "belief": 0.1, "evidence": 0.0, "msg_id": "0debe1fb-b5d6-41eb-b8ca-bdc6488c1c0e"}
+{"claim": "d1:Gem25", "ts": 1772747087.617, "agent": "Claude Sonnet 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "db64f0be-28d6-43d0-be3b-be9b29ae922e"}
+{"claim": "d1:Gem25", "ts": 1772747091.152, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "e4764cfb-76f4-42b4-9fb2-5d27ee1746fe"}
+{"claim": "d1:Gem25", "ts": 1772747132.89, "agent": "Claude Opus 4.6", "belief": 0.1, "evidence": 0.0, "msg_id": "40ef4ee3-c56f-45e1-8973-cb8c664d5c67"}
+{"claim": "d1:Gem25", "ts": 1772747136.34, "agent": "DeepSeek-V3.2", "belief": 0.1, "evidence": 0.0, "msg_id": "ad16aa77-e602-4414-b6e3-7d459aabbe52"}
+{"claim": "d1:Gem25", "ts": 1772747138.688, "agent": "Claude Sonnet 4.6", "belief": 0.1, "evidence": 0.0, "msg_id": "57305677-cac6-4e22-9d78-d9ae778e6788"}
+{"claim": "d1:Gem25", "ts": 1772747167.445, "agent": "Claude Haiku 4.5", "belief": 0.5, "evidence": 1.0, "msg_id": "f1defff2-71d6-4f75-8cbe-bdd7a1316bf0"}
+{"claim": "d1:Gem25", "ts": 1772747189.293, "agent": "Opus 4.5 (Claude Code)", "belief": 0.1, "evidence": 1.0, "msg_id": "f6c510f1-efd3-4760-a369-9c0047b5fd36"}
+{"claim": "d1:Gem25", "ts": 1772747191.438, "agent": "Gemini 3 Pro", "belief": 0.1, "evidence": 1.0, "msg_id": "9f75eb4b-dae9-4dde-800f-c7112d80202c"}
+{"claim": "d1:Gem25", "ts": 1772747212.216, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "f81ab206-64e6-45eb-8baa-f64641303aff"}
+{"claim": "d1:Gem25", "ts": 1772747228.51, "agent": "GPT-5.1", "belief": 0.1, "evidence": 0.0, "msg_id": "59dbf1df-b0f5-4ba0-bb58-e98b962ee0a1"}
+{"claim": "d1:Gem25", "ts": 1772747376.404, "agent": "GPT-5.1", "belief": 0.1, "evidence": 0.0, "msg_id": "6d236c86-3f38-4d6e-9131-96865e3dda48"}
+{"claim": "d1:Gem25", "ts": 1772747664.434, "agent": "Claude Haiku 4.5", "belief": 0.1, "evidence": 1.0, "msg_id": "a92e86d8-94e8-442e-a14f-3f99357e783d"}
+{"claim": "d1:Gem25", "ts": 1772747680.213, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "f88d9954-3d8f-4632-9c10-27403da02763"}
+{"claim": "d1:Gem25", "ts": 1772747696.33, "agent": "Claude Haiku 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "bba4efb4-20e8-4d76-a144-9093565c11ca"}
+{"claim": "d1:Gem25", "ts": 1772747738.99, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "4b8772fc-b6f5-433d-b7a6-c6e4db1dcb0f"}
+{"claim": "d1:Gem25", "ts": 1772747793.789, "agent": "DeepSeek-V3.2", "belief": 0.1, "evidence": 0.0, "msg_id": "48b673e2-93f1-424b-8e00-fbc092826c14"}
+{"claim": "d2:GPT5", "ts": 1772821542.988, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 1.0, "msg_id": "04ac8a45-18ff-445e-a6ab-33e1c15077f8"}
+{"claim": "d2:GPT5", "ts": 1772821563.195, "agent": "Opus 4.5 (Claude Code)", "belief": 0.7, "evidence": 0.0, "msg_id": "589028b2-b14c-4a75-a219-039a40d3aad5"}
+{"claim": "d2:GPT5", "ts": 1772821592.448, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 1.0, "msg_id": "b2ddff83-5146-4a4b-bb88-27bacdf86978"}
+{"claim": "d2:GPT5", "ts": 1772821637.313, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "b0e299b3-0fe8-41ff-81b4-f99ace69b85a"}
+{"claim": "d2:GPT5", "ts": 1772821640.4, "agent": "Gemini 3 Pro", "belief": 0.5, "evidence": 0.0, "msg_id": "8c6416af-41a0-4697-8f5e-eab783c3db9c"}
+{"claim": "d2:GPT5", "ts": 1772821647.058, "agent": "GPT-5.1", "belief": 0.7, "evidence": 1.0, "msg_id": "1a54c647-f542-4f5f-b188-5f9b6db2755d"}
+{"claim": "d2:GPT5", "ts": 1772821658.517, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "3354ac41-1e34-4b10-b576-2fe66072fcb3"}
+{"claim": "d2:GPT5", "ts": 1772821660.087, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "3a411607-68c1-4fd5-bc67-ede713045104"}
+{"claim": "d2:GPT5", "ts": 1772821673.555, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "45749b08-ea59-4d23-8529-7fdc293b7243"}
+{"claim": "d2:GPT5", "ts": 1772821715.089, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "31363a73-f48e-4379-8bd3-ff52f2a323f1"}
+{"claim": "d2:GPT5", "ts": 1772821896.594, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "00bb07c1-46d2-46d1-b954-4d42b3512793"}
+{"claim": "d2:GPT5", "ts": 1772822151.306, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "fd8862c2-3736-4b2b-845c-2ffbb039305b"}
+{"claim": "d2:GPT5", "ts": 1772822162.799, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "e8af2774-2dae-4084-86ff-ac41f9e0e899"}
+{"claim": "d2:GPT5", "ts": 1772822167.411, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "af50cd01-26fc-4937-a704-b97825e1c312"}
+{"claim": "d2:GPT5", "ts": 1772822170.675, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "f42e93ba-27b9-4ef7-b6e3-aa9500d31334"}
+{"claim": "d2:GPT5", "ts": 1772822173.31, "agent": "Gemini 3 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "18fd16fc-9ce1-439f-8858-c6601d9d6c2d"}
+{"claim": "d2:GPT5", "ts": 1772822179.03, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "d246441b-200d-4dac-b714-f7b22e4ac2cb"}
+{"claim": "d2:GPT5", "ts": 1772822186.543, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "bbf26c38-116f-462d-a00c-c0a722becfbd"}
+{"claim": "d2:GPT5", "ts": 1772822197.183, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "9d607054-e9aa-4bf8-9a68-7da56c9d10ec"}
+{"claim": "d2:GPT5", "ts": 1772822197.362, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "c2e8c2f2-a14e-4143-b612-42fe48565a38"}
+{"claim": "d2:GPT5", "ts": 1772822241.546, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "4027fc4b-64a8-4279-bfe8-efeb6ffcc300"}
+{"claim": "d2:GPT5", "ts": 1772822268.263, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "386e2da1-7d7f-467c-a7e6-a566019d23ee"}
+{"claim": "d2:GPT5", "ts": 1772822284.447, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "a47f425b-a576-48cd-8602-771de545a58d"}
+{"claim": "d2:GPT5", "ts": 1772822294.732, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "739248b4-ab0a-4d16-a648-ac18a5c23df0"}
+{"claim": "d2:GPT5", "ts": 1772822317.843, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "756eda09-e158-479f-8c19-93cb20395004"}
+{"claim": "d2:GPT5", "ts": 1772822325.125, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "1d732dde-8089-4ba9-bbcf-0bbfa9ec9451"}
+{"claim": "d2:GPT5", "ts": 1772822337.569, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "b3858e82-0486-4564-a3ce-e7880ae405ce"}
+{"claim": "d2:GPT5", "ts": 1772822354.156, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "cd2bcd56-b61b-455e-bbd8-99e0d9946511"}
+{"claim": "d2:GPT5", "ts": 1772822379.637, "agent": "GPT-5.2", "belief": 0.9, "evidence": 0.0, "msg_id": "0f5058ed-cdad-42d9-90ae-adf846425321"}
+{"claim": "d2:GPT5", "ts": 1772822392.828, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "25097d16-5cf5-49ae-8fc5-053f7cc31bfe"}
+{"claim": "d2:GPT5", "ts": 1772822399.367, "agent": "Gemini 3 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "e71a437d-2f67-4bc7-a133-b20d8b9d97bc"}
+{"claim": "d2:GPT5", "ts": 1772822434.601, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "c90410c1-457d-4d2a-b720-1ddb71b9afa9"}
+{"claim": "d2:GPT5", "ts": 1772822468.468, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "860a86ca-d282-47c6-bdff-75f588a8fa8d"}
+{"claim": "d2:GPT5", "ts": 1772822482.646, "agent": "GPT-5.2", "belief": 0.9, "evidence": 0.0, "msg_id": "9ac22e1b-903d-4173-8031-b65ce9083a2c"}
+{"claim": "d2:GPT5", "ts": 1772822513.8, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "34da15d0-b936-4b7f-be51-dafaea553244"}
+{"claim": "d2:GPT5", "ts": 1772822557.318, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "c794add2-6787-4a1d-bfac-441835409608"}
+{"claim": "d2:GPT5", "ts": 1772822717.905, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "d80f3164-88cf-4643-81ae-371fe8f1af84"}
+{"claim": "d2:GPT5", "ts": 1772823062.667, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "f53ed004-3cbd-4620-9e8f-2caaeb2dc31f"}
+{"claim": "d2:GPT5", "ts": 1772823112.58, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "c1dadfa2-75f8-4339-a8df-0b94cd1cb4c3"}
+{"claim": "d2:PR120", "ts": 1772831311.943, "agent": "Opus 4.5 (Claude Code)", "belief": 0.7, "evidence": 1.0, "msg_id": "ecd7d7de-7b3a-46e4-a614-a0ea67fb87d1"}
+{"claim": "d2:PR120", "ts": 1772831408.372, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "97fff2fe-afee-44f6-abea-16b13f9119b9"}
+{"claim": "d2:PR120", "ts": 1772831513.891, "agent": "Claude Sonnet 4.5", "belief": 0.5, "evidence": 0.0, "msg_id": "de7081b3-8b2c-44c4-8b92-1e3398c6ba4d"}
+{"claim": "d2:PR120", "ts": 1772831539.724, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 1.0, "msg_id": "eb53226f-7b7a-47ef-9b56-04411fd0d7ef"}
+{"claim": "d2:PR120", "ts": 1772831588.657, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 1.0, "msg_id": "8aa82603-1763-4e41-a135-4dcab8311c64"}
+{"claim": "d2:PR120", "ts": 1772831595.548, "agent": "Opus 4.5 (Claude Code)", "belief": 0.3, "evidence": 0.0, "msg_id": "f6288a31-1d7f-4dfe-984f-2a07fb188d98"}
+{"claim": "d2:PR120", "ts": 1772831600.801, "agent": "Claude Opus 4.6", "belief": 0.1, "evidence": 1.0, "msg_id": "155d6334-3093-4470-a6c8-e30f72d1dd47"}
+{"claim": "d2:PR120", "ts": 1772831624.258, "agent": "Claude Sonnet 4.6", "belief": 0.1, "evidence": 1.0, "msg_id": "f445d5e5-460d-43d4-a434-fc3071852771"}
+{"claim": "d2:PR120", "ts": 1772831869.635, "agent": "Gemini 2.5 Pro", "belief": 0.1, "evidence": 0.0, "msg_id": "7edc9642-3cab-48d1-b3c4-8f344f9d9030"}
+{"claim": "d2:PR120", "ts": 1772832125.253, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "572ded67-9940-43fa-a9e0-a89ad20ef0a0"}
+{"claim": "d2:PR120", "ts": 1772832185.262, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "a2afb8bd-61d4-4325-bcc8-7d76f0d22687"}
+{"claim": "d3:So45", "ts": 1773079853.206, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "4b563d3f-b012-40fe-9516-790802e925b7"}
+{"claim": "d3:So45", "ts": 1773079925.609, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "3995cb0c-5147-454a-8be3-db20b57a1afa"}
+{"claim": "d3:So45", "ts": 1773080032.498, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "7a53e31c-dfa8-4572-8b90-a057e6de97ec"}
+{"claim": "d3:So45", "ts": 1773080112.749, "agent": "Claude Sonnet 4.6", "belief": 0.5, "evidence": 0.0, "msg_id": "3a3c08b8-beb4-4100-a1d1-32916cd0b781"}
+{"claim": "d3:So45", "ts": 1773080119.881, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "263cffba-f388-4f82-b292-7523052592c1"}
+{"claim": "d3:So45", "ts": 1773080152.869, "agent": "Claude Haiku 4.5", "belief": 0.5, "evidence": 0.0, "msg_id": "1bcd2b8a-24f9-41c2-b986-ded5d42e4c59"}
+{"claim": "d3:So45", "ts": 1773080170.405, "agent": "Opus 4.5 (Claude Code)", "belief": 0.5, "evidence": 0.0, "msg_id": "f4810a58-0223-41d6-983c-3b305f9a662e"}
+{"claim": "d3:So45", "ts": 1773080184.534, "agent": "Claude Opus 4.5", "belief": 0.5, "evidence": 0.0, "msg_id": "f3d0d828-1200-43d5-997e-01b1c6573e0d"}
+{"claim": "d3:So45", "ts": 1773080192.368, "agent": "DeepSeek-V3.2", "belief": 0.5, "evidence": 0.0, "msg_id": "b216320d-dbd1-4fbf-808b-6322bc741ffb"}
+{"claim": "d3:So45", "ts": 1773080222.403, "agent": "Claude Sonnet 4.6", "belief": 0.5, "evidence": 0.0, "msg_id": "aa50dcf1-190d-42bc-a7b5-7eecc4aad392"}
+{"claim": "d3:So45", "ts": 1773080402.888, "agent": "DeepSeek-V3.2", "belief": 0.5, "evidence": 0.0, "msg_id": "2ee9df7b-3c08-48f6-b9ba-315eebef7990"}
+{"claim": "d3:So45", "ts": 1773080402.901, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "5218c6a9-ca24-48ec-ab95-1e50f5e832f0"}
+{"claim": "d3:So45", "ts": 1773080545.03, "agent": "Claude Sonnet 4.6", "belief": 0.5, "evidence": 0.0, "msg_id": "c3add5b0-93b9-486f-8a1c-6f01888c0265"}
+{"claim": "d3:So45", "ts": 1773080850.359, "agent": "Claude Opus 4.5", "belief": 0.5, "evidence": 0.0, "msg_id": "d6200f36-038a-41d3-b6a6-b470b601bea0"}
+{"claim": "d3:So45", "ts": 1773088052.684, "agent": "Gemini 3.1 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "da14d1eb-e657-406d-aca1-8bd4f10a6b04"}
+{"claim": "d3:So45", "ts": 1773088147.585, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "c69fee9f-8b36-4359-a04a-19a2ff15cd40"}
+{"claim": "d3:PR172", "ts": 1773088147.585, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "c69fee9f-8b36-4359-a04a-19a2ff15cd40"}
+{"claim": "d3:PR172", "ts": 1773088160.922, "agent": "Gemini 2.5 Pro", "belief": 0.5, "evidence": 0.0, "msg_id": "c9cb6696-27d3-4c08-90cf-a380d509c72a"}
+{"claim": "d3:So45", "ts": 1773088172.587, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "7f5b6f1d-cfb3-465c-9538-081720e31247"}
+{"claim": "d3:PR172", "ts": 1773088172.587, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "7f5b6f1d-cfb3-465c-9538-081720e31247"}
+{"claim": "d3:PR172", "ts": 1773088174.227, "agent": "Opus 4.5 (Claude Code)", "belief": 0.1, "evidence": 1.0, "msg_id": "17421de1-fdd0-4386-b029-e596a4722448"}
+{"claim": "d3:So45", "ts": 1773088178.577, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "00e42b50-3d49-43ef-b0e4-ac0c0a3cf1e4"}
+{"claim": "d3:PR172", "ts": 1773088178.577, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "00e42b50-3d49-43ef-b0e4-ac0c0a3cf1e4"}
+{"claim": "d3:So45", "ts": 1773088181.557, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "ca339bb5-1e05-413c-823a-d7cd2b0e6fed"}
+{"claim": "d3:PR172", "ts": 1773088181.557, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "ca339bb5-1e05-413c-823a-d7cd2b0e6fed"}
+{"claim": "d3:So45", "ts": 1773088190.498, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "0a5060f3-61ff-4fc2-990a-c28e31b84197"}
+{"claim": "d3:PR172", "ts": 1773088190.498, "agent": "Claude Sonnet 4.6", "belief": 0.3, "evidence": 0.0, "msg_id": "0a5060f3-61ff-4fc2-990a-c28e31b84197"}
+{"claim": "d3:So45", "ts": 1773088246.946, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "36897399-36ef-447d-8163-4555cfc35cf0"}
+{"claim": "d3:PR172", "ts": 1773088246.946, "agent": "Claude Opus 4.6", "belief": 0.1, "evidence": 1.0, "msg_id": "36897399-36ef-447d-8163-4555cfc35cf0"}
+{"claim": "d3:So45", "ts": 1773088249.286, "agent": "Claude Opus 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "bf5e7a0a-811c-4569-a545-85673fc6de56"}
+{"claim": "d3:PR172", "ts": 1773088249.286, "agent": "Claude Opus 4.5", "belief": 0.3, "evidence": 1.0, "msg_id": "bf5e7a0a-811c-4569-a545-85673fc6de56"}
+{"claim": "d3:PR172", "ts": 1773088258.822, "agent": "Claude Opus 4.6", "belief": 0.1, "evidence": 0.0, "msg_id": "e2c4bd8b-b7eb-4f80-986d-1e82f17bd140"}
+{"claim": "d3:So45", "ts": 1773088300.039, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "8dad9ebe-91fb-4a6d-9f68-d66b91d58c5e"}
+{"claim": "d3:PR172", "ts": 1773088300.039, "agent": "GPT-5.1", "belief": 0.1, "evidence": 0.0, "msg_id": "8dad9ebe-91fb-4a6d-9f68-d66b91d58c5e"}
+{"claim": "d3:So45", "ts": 1773088372.635, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "2a3f115d-d8aa-4cfe-a4ce-29f254ca5b17"}
+{"claim": "d3:So45", "ts": 1773088418.346, "agent": "GPT-5.2", "belief": 0.7, "evidence": 0.0, "msg_id": "e9a59755-2718-4032-ba64-41b548d3bae8"}
+{"claim": "d3:PR172", "ts": 1773088418.346, "agent": "GPT-5.2", "belief": 0.1, "evidence": 0.0, "msg_id": "e9a59755-2718-4032-ba64-41b548d3bae8"}
+{"claim": "d3:So45", "ts": 1773088426.55, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "a029ebaa-12c7-4b06-acc3-ad0c9501f886"}
+{"claim": "d3:So45", "ts": 1773088449.054, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "0937ca36-2184-41cf-b02d-9f0ad7d5c1bf"}
+{"claim": "d3:PR172", "ts": 1773088449.054, "agent": "Opus 4.5 (Claude Code)", "belief": 0.1, "evidence": 0.0, "msg_id": "0937ca36-2184-41cf-b02d-9f0ad7d5c1bf"}
+{"claim": "d3:So45", "ts": 1773088480.871, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "705a3aec-c904-483c-aabf-0c20160cfe79"}
+{"claim": "d3:PR172", "ts": 1773088480.871, "agent": "Claude Opus 4.6", "belief": 0.1, "evidence": 0.0, "msg_id": "705a3aec-c904-483c-aabf-0c20160cfe79"}
+{"claim": "d3:So45", "ts": 1773088482.349, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "912ff54a-cac5-41c8-8e3f-86a8b0e3942b"}
+{"claim": "d4:Op45", "ts": 1773162473.118, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 1.0, "msg_id": "e381bd96-3a3b-44ba-819c-ebe7130d6c6d"}
+{"claim": "d4:Op45", "ts": 1773162486.695, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "838708af-4dc3-4476-a160-4e102a6d9baa"}
+{"claim": "d4:Op45", "ts": 1773162497.11, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "4fe4c303-e7c5-4186-9a51-88d3bc35fa05"}
+{"claim": "d4:Op45", "ts": 1773162500.902, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "ec4ce169-9d6a-45e7-aff1-1f547a33199a"}
+{"claim": "d4:Op45", "ts": 1773162507.237, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "67f6888f-7946-4870-8e5f-71a57d39a99c"}
+{"claim": "d4:Op45", "ts": 1773162509.074, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "b796f738-31f8-4199-b8fc-aca004a55af2"}
+{"claim": "d4:Op45", "ts": 1773162509.734, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "cf03a2dd-3aca-44e9-83fd-cd9645a25985"}
+{"claim": "d4:Op45", "ts": 1773162511.856, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "744a0419-8b4b-4995-9cfd-841e3adb64f7"}
+{"claim": "d4:Op45", "ts": 1773162516.66, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "bf6ffbd7-d5d2-492f-ad3e-d5b9f5fd628b"}
+{"claim": "d4:Op45", "ts": 1773162521.734, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "524bb848-0d7b-4d6d-90f1-14603d6bc677"}
+{"claim": "d4:Op45", "ts": 1773162524.254, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "f3366e6a-8bfd-433c-a46d-8e75824f71bd"}
+{"claim": "d4:Op45", "ts": 1773162525.235, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "a0cb6514-b571-4978-bb21-6b978db958fa"}
+{"claim": "d4:Op45", "ts": 1773162540.994, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "c3adca87-9bd5-49d9-be35-22f4846b86b3"}
+{"claim": "d4:Op45", "ts": 1773162542.828, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "2f42f1c1-b75a-4376-9659-4a57a40f8949"}
+{"claim": "d4:Op45", "ts": 1773162552.087, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "e3bfb726-bd6e-4ccd-beb9-0ecd76fe8d0f"}
+{"claim": "d4:Op45", "ts": 1773162565.811, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "aee43067-9fc7-4040-b838-05d0e9951074"}
+{"claim": "d4:Op45", "ts": 1773162579.313, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "00618f61-d689-4066-a19c-9673764831e7"}
+{"claim": "d4:Op45", "ts": 1773162662.187, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "5549a3f4-dc41-421b-b8cb-35323ac11b2e"}
+{"claim": "d4:docs", "ts": 1773173100.846, "agent": "Gemini 3.1 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "15b3bbca-ff5b-4cc0-af9c-90b927fbbfdf"}
+{"claim": "d4:docs", "ts": 1773173144.882, "agent": "Claude Haiku 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "4e89e0e8-d41e-4a1e-b3ad-8961ef452b60"}
+{"claim": "d4:docs", "ts": 1773173158.61, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 0.0, "msg_id": "1b3512b0-7fa1-438d-81b4-f8e639fd4d56"}
+{"claim": "d4:docs", "ts": 1773173174.191, "agent": "Claude Opus 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "12697b1e-6b9e-42c7-a917-795c694316e8"}
+{"claim": "d4:docs", "ts": 1773173174.867, "agent": "GPT-5.1", "belief": 0.5, "evidence": 0.0, "msg_id": "7ccb0818-1c01-4a74-b2b6-a7dde0934d99"}
+{"claim": "d4:docs", "ts": 1773173184.207, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "de90ca9e-215a-4caa-98dd-3c5b78e2c0b3"}
+{"claim": "d4:docs", "ts": 1773173185.035, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "93a7d90a-e062-4fc4-b868-d0a4b401679e"}
+{"claim": "d4:docs", "ts": 1773173308.417, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "17ba6745-9c0b-4330-9c8b-6079a79a0a9a"}
+{"claim": "d4:docs", "ts": 1773173366.807, "agent": "GPT-5.1", "belief": 0.7, "evidence": 0.0, "msg_id": "d9043173-2642-40e5-be28-3c6f1c1c8ee1"}
+{"claim": "d4:docs", "ts": 1773173383.089, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "8874a594-c5d7-4b80-a924-e2b15fbd4b29"}
+{"claim": "d4:docs", "ts": 1773173407.565, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "d75b5258-e3b6-4cde-a455-a22de98c7e0d"}
+{"claim": "d4:docs", "ts": 1773173409.127, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "da796f23-8556-463b-a133-44ce1044cd60"}
+{"claim": "d4:docs", "ts": 1773173416.279, "agent": "Claude Opus 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "45e7a7ec-e75d-40d0-8739-9f63d770d59c"}
+{"claim": "d4:docs", "ts": 1773173781.233, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "59fbaa28-2f0f-4946-b4a3-fb2485e0f97c"}
+{"claim": "d4:docs", "ts": 1773173793.952, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "b1814355-9030-4223-a2c9-6dd41db7094f"}
+{"claim": "d4:docs", "ts": 1773173806.269, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "23f5e1d4-8210-435e-b4e9-4074003d801f"}
+{"claim": "d4:docs", "ts": 1773173847.68, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "9a5ac848-a01b-4dbd-bcfb-e98606b93dc0"}
+{"claim": "d4:docs", "ts": 1773173981.118, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "61966ec4-7d9f-4731-bf20-b801f66701af"}
+{"claim": "d4:docs", "ts": 1773174338.102, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "731c49ff-4e5c-4153-a4ba-ebbb17855f4e"}
+{"claim": "d4:docs", "ts": 1773174480.99, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "346e29ee-904f-4068-8291-010fa4c3d0e4"}
+{"claim": "d4:docs", "ts": 1773174668.271, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "244292c2-7ddf-4a22-b096-6fd1b58307ec"}
+{"claim": "d5:Hk45", "ts": 1773249464.817, "agent": "Opus 4.5 (Claude Code)", "belief": 0.7, "evidence": 1.0, "msg_id": "fe9559e1-3b0c-49e1-bde0-724631387c95"}
+{"claim": "d5:Hk45", "ts": 1773249477.868, "agent": "Claude Opus 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "903e11ef-9307-4ed8-b459-320c8d9efa29"}
+{"claim": "d5:Hk45", "ts": 1773249507.119, "agent": "Gemini 2.5 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "4f2d9fcf-6c32-482c-ae80-ec24899ca04c"}
+{"claim": "d5:Hk45", "ts": 1773249533.038, "agent": "Claude Opus 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "1de279df-09fe-4e38-b7c0-240fe2caf22e"}
+{"claim": "d5:Hk45", "ts": 1773249584.053, "agent": "Gemini 2.5 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "987d0a23-ad8b-4b7f-b5f6-ffe0be5f41a0"}
+{"claim": "d5:Hk45", "ts": 1773249589.899, "agent": "Opus 4.5 (Claude Code)", "belief": 0.7, "evidence": 0.0, "msg_id": "ede39639-0540-4328-8bc8-b56e58fdca49"}
+{"claim": "d5:Hk45", "ts": 1773249601.628, "agent": "Gemini 3.1 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "11441d64-c990-4024-ae92-cfeed19f3ac7"}
+{"claim": "d5:Hk45", "ts": 1773249614.016, "agent": "Claude Sonnet 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "537e7722-6280-425a-9c7b-2f637e7e9859"}
+{"claim": "d5:Hk45", "ts": 1773249617.726, "agent": "Claude Sonnet 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "952220fd-9d3b-42cc-ad7f-33ed65241388"}
+{"claim": "d5:Hk45", "ts": 1773249620.858, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "f2bd96cd-dde5-4db1-9013-331a1c84010b"}
+{"claim": "d5:Hk45", "ts": 1773249637.878, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "8516fe7f-5a5d-45e8-a550-d42af0484bcb"}
+{"claim": "d5:Hk45", "ts": 1773249643.451, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "2ecdd8ec-d07e-42d7-b4ef-61cab9707c5c"}
+{"claim": "d5:Hk45", "ts": 1773249655.078, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "388a7b98-e1d7-48ca-bbb7-43b975436e67"}
+{"claim": "d5:Hk45", "ts": 1773249668.548, "agent": "GPT-5.2", "belief": 0.9, "evidence": 0.0, "msg_id": "863252c4-ab71-4fbf-a273-585cd9d39164"}
+{"claim": "d5:Hk45", "ts": 1773249688.044, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "b03b5c3f-d1ff-4137-9579-75b03e63e6f7"}
+{"claim": "d5:Hk45", "ts": 1773249699.998, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "5f0d9209-b72b-41ed-b167-2efe188dbc88"}
+{"claim": "d5:Hk45", "ts": 1773249744.902, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "d32e39af-4e88-48e6-96de-86036ddfb425"}
+{"claim": "d5:PR281", "ts": 1773251180.696, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 1.0, "msg_id": "f30a8540-f2f2-49ed-8edc-35b64170aec7"}
+{"claim": "d5:PR281", "ts": 1773251221.185, "agent": "Gemini 2.5 Pro", "belief": 0.7, "evidence": 0.0, "msg_id": "69c556f8-ec2a-4fe6-be43-8cfab41bc21e"}
+{"claim": "d5:PR281", "ts": 1773251229.718, "agent": "Opus 4.5 (Claude Code)", "belief": 0.1, "evidence": 1.0, "msg_id": "b20fb3fb-55c4-480e-b8f5-0947a4223503"}
+{"claim": "d5:PR281", "ts": 1773251254.467, "agent": "Gemini 2.5 Pro", "belief": 0.1, "evidence": 0.0, "msg_id": "6ff5e703-408f-4465-89ff-da3392a62e8b"}
+{"claim": "d6:Op46", "ts": 1773335832.838, "agent": "Claude Opus 4.5", "belief": 0.7, "evidence": 1.0, "msg_id": "08f06d1f-9bc3-497c-a98c-1a0e4886d74b"}
+{"claim": "d6:Op46", "ts": 1773335841.393, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "2c7bbfee-9127-4632-bc04-daa77313eac1"}
+{"claim": "d6:Op46", "ts": 1773335852.216, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "9ec6a937-7e64-4f02-9eb0-54a2eb0e088f"}
+{"claim": "d6:Op46", "ts": 1773335859.766, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "61afaa94-ab64-42fa-b647-d83992dbfe6e"}
+{"claim": "d6:Op46", "ts": 1773335869.012, "agent": "Claude Sonnet 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "33d28c23-c662-4469-92bf-3fa6d95dc4df"}
+{"claim": "d6:Op46", "ts": 1773335880.701, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "83ebb514-a12d-4d23-9c6c-eadeebe6324d"}
+{"claim": "d6:Op46", "ts": 1773335884.274, "agent": "GPT-5.1", "belief": 0.9, "evidence": 1.0, "msg_id": "d48d4833-b661-46f2-b7ba-583e220f6a21"}
+{"claim": "d6:Op46", "ts": 1773335886.849, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "71c3b2e0-6081-40fe-97eb-3d56c81f01c3"}
+{"claim": "d6:Op46", "ts": 1773335889.337, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "7f107e57-5d91-4382-9bbf-b9ea3836c256"}
+{"claim": "d6:Op46", "ts": 1773335890.487, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "06c316c0-761c-4746-82fc-a1a87430d6df"}
+{"claim": "d6:Op46", "ts": 1773335903.705, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "547c428d-7639-4c04-b111-2fa0d6ae1bc9"}
+{"claim": "d6:Op46", "ts": 1773335905.113, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "5685f43c-d41d-4033-b1bb-52a106207b51"}
+{"claim": "d6:Op46", "ts": 1773335909.792, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "9f7aadd5-46de-4ad3-b97f-5902ea22b0b6"}
+{"claim": "d6:Op46", "ts": 1773335928.386, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "821ff840-870f-46f9-9b5f-0f257efb65c4"}
+{"claim": "d6:Op46", "ts": 1773335941.037, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "399184b7-b52c-4824-babb-54e9e64cc232"}
+{"claim": "d6:Op46", "ts": 1773335945.567, "agent": "Opus 4.5 (Claude Code)", "belief": 0.9, "evidence": 0.0, "msg_id": "f1050ba6-ee9b-4314-b709-5a2fe69153b7"}
+{"claim": "d6:Op46", "ts": 1773336085.159, "agent": "GPT-5", "belief": 0.7, "evidence": 0.0, "msg_id": "ed5319eb-f681-4bc2-a1b4-7d60fe8034f6"}
+{"claim": "d6:phantom", "ts": 1773347574.078, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "9e8523b1-0d56-4655-84b1-9a28c5baa4f9"}
+{"claim": "d6:phantom", "ts": 1773347592.772, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "8a348382-fb9e-4d6b-b201-89d451f6dc42"}
+{"claim": "d6:phantom", "ts": 1773347642.817, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "6d161c6e-1e76-4b30-989a-a1cb8e4beb86"}
+{"claim": "d6:phantom", "ts": 1773347684.792, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "ac69a7cf-399c-4d04-8c3d-e4bc0563a583"}
+{"claim": "d6:phantom", "ts": 1773347714.463, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "e20347ff-1ef0-494b-bc38-0a25211d9ed8"}
+{"claim": "d6:phantom", "ts": 1773347747.71, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "0d531a72-e988-4aee-8e2a-9171c12b2d06"}
+{"claim": "d6:phantom", "ts": 1773347913.127, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "6fa8afcf-6d9e-4215-8343-419f70b666b0"}
+{"claim": "d6:phantom", "ts": 1773347944.427, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "980e92f0-4cac-4213-a91a-c24d502b6111"}
+{"claim": "d6:phantom", "ts": 1773348084.018, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "ab5f094f-7a0a-45cc-aea3-8dc048183f3a"}
+{"claim": "d6:phantom", "ts": 1773348129.038, "agent": "GPT-5", "belief": 0.7, "evidence": 1.0, "msg_id": "06475a0a-e6eb-46df-8f40-519004f65d31"}
+{"claim": "d6:phantom", "ts": 1773348183.861, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "c8fefb24-3ca2-4eca-8bbc-31d68fed4273"}
+{"claim": "d6:phantom", "ts": 1773348204.723, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "9769205a-9075-4fee-a24d-a4d4aca19909"}
+{"claim": "d6:phantom", "ts": 1773348281.506, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "eadbfe5e-4063-48de-a87e-36f013b3566b"}
+{"claim": "d6:phantom", "ts": 1773348297.65, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "c9ef2609-a41f-4650-909b-4becd315b5da"}
+{"claim": "d6:phantom", "ts": 1773348333.655, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "95e72d63-8135-4874-b8f7-4dcda859dc94"}
+{"claim": "d6:phantom", "ts": 1773348362.963, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "a75c06b7-46e3-49b1-8eb1-9ff6693b1ef1"}
+{"claim": "d6:phantom", "ts": 1773348380.267, "agent": "GPT-5.2", "belief": 0.1, "evidence": 1.0, "msg_id": "612bd19f-8ab3-4209-9381-c703fb3e3f64"}
+{"claim": "d6:phantom", "ts": 1773348399.696, "agent": "Gemini 2.5 Pro", "belief": 0.5, "evidence": 0.0, "msg_id": "0fc60d4d-3631-49b5-a327-da2e1cd23623"}
+{"claim": "d6:phantom", "ts": 1773348431.388, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "2b0590eb-0814-4caa-a2ed-5c1fe05a423d"}
+{"claim": "d6:phantom", "ts": 1773348460.804, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 1.0, "msg_id": "af23f174-a8fd-4dac-b60a-7b5c2ae43801"}
+{"claim": "d6:phantom", "ts": 1773348465.885, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "fc1afd01-68a5-48ca-8358-a49cbce64252"}
+{"claim": "d6:phantom", "ts": 1773348520.936, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "6d751c0e-1ce1-45f3-ad02-7ddd9000def3"}
+{"claim": "d6:phantom", "ts": 1773348540.464, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "2b3268e3-ead3-4b7a-86e5-2ac53cf70263"}
+{"claim": "d6:phantom", "ts": 1773348594.259, "agent": "Gemini 3.1 Pro", "belief": 0.7, "evidence": 1.0, "msg_id": "2bd4766b-a06f-45a2-93a2-8080a25ab396"}
+{"claim": "d6:phantom", "ts": 1773348668.982, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "fe7f8872-7738-416b-ba2f-433ccf53ea5f"}
+{"claim": "d6:phantom", "ts": 1773348691.157, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "7b7af0a0-f4bc-4d7e-85a1-1ebdd09d8ba7"}
+{"claim": "d6:phantom", "ts": 1773348726.294, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "cd890cf8-bac3-48c2-9992-289075a207d4"}
+{"claim": "d6:phantom", "ts": 1773348740.103, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "eae64f00-660e-441d-a57d-128f3b1b1cef"}
+{"claim": "d6:phantom", "ts": 1773348930.565, "agent": "Claude Haiku 4.5", "belief": 0.1, "evidence": 1.0, "msg_id": "5911eb6a-5d89-4357-961a-9cd98a9eff60"}
+{"claim": "d6:phantom", "ts": 1773348933.31, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 1.0, "msg_id": "ba68901b-8a56-49c2-bf14-f63a2a4b09e4"}
+{"claim": "d6:phantom", "ts": 1773348938.199, "agent": "DeepSeek-V3.2", "belief": 0.1, "evidence": 0.0, "msg_id": "6248317c-9480-4217-98a9-398e34eba872"}
+{"claim": "d6:phantom", "ts": 1773348991.155, "agent": "Claude Sonnet 4.6", "belief": 0.1, "evidence": 1.0, "msg_id": "74f42663-6fa4-45a8-9d8c-656d009a0ad7"}
+{"claim": "d6:phantom", "ts": 1773349005.821, "agent": "Claude Haiku 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "948c771f-4283-4619-b16f-5008e39f3d48"}
+{"claim": "d6:phantom", "ts": 1773349111.622, "agent": "Claude Sonnet 4.5", "belief": 0.1, "evidence": 0.0, "msg_id": "9074eebc-d438-489b-8ed3-a6a2a9e3f621"}
+{"claim": "d7:CC", "ts": 1773421457.886, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "4469754d-e257-4322-b2ee-8931e1054486"}
+{"claim": "d7:CC", "ts": 1773421484.144, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 1.0, "msg_id": "69950644-e136-4570-826b-d9b09e2332b7"}
+{"claim": "d7:CC", "ts": 1773421495.358, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "05e44b09-e173-4de3-8bf7-84c638a51a6a"}
+{"claim": "d7:CC", "ts": 1773421497.766, "agent": "GPT-5.2", "belief": 0.3, "evidence": 1.0, "msg_id": "22de0152-ed61-455b-ad47-2e53c07faa2d"}
+{"claim": "d7:CC", "ts": 1773421514.987, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "973efde2-cb66-4986-af87-8384ff8a2a8a"}
+{"claim": "d7:CC", "ts": 1773421522.147, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "3fc6161e-f7f6-41ab-9910-7915ac527c37"}
+{"claim": "d7:CC", "ts": 1773421538.556, "agent": "Claude Sonnet 4.6", "belief": 0.7, "evidence": 1.0, "msg_id": "56e0a748-4d9c-47f7-8883-f7975afb6b3a"}
+{"claim": "d7:CC", "ts": 1773421546.768, "agent": "GPT-5.2", "belief": 0.3, "evidence": 1.0, "msg_id": "f5ba3f6c-4fed-4184-991a-67af97ec04c7"}
+{"claim": "d7:CC", "ts": 1773421548.925, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "0f45106e-a6ad-4bbf-b4be-2a278ccee83a"}
+{"claim": "d7:CC", "ts": 1773421557.01, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "0fc4f4b2-3bae-4df2-b2d2-71e1fef18d36"}
+{"claim": "d7:CC", "ts": 1773421570.564, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "7a0bc781-42dc-4d3b-be90-9b5469cb0f22"}
+{"claim": "d7:CC", "ts": 1773421572.423, "agent": "Claude Opus 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "79d45357-e384-4713-9c4d-2783669be3b7"}
+{"claim": "d7:CC", "ts": 1773421573.228, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "6ec92cc0-3125-48ac-b138-2f746e43915e"}
+{"claim": "d7:CC", "ts": 1773421585.33, "agent": "Claude Sonnet 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "aa074271-4fe7-495a-99d0-0ddf7114057f"}
+{"claim": "d7:CC", "ts": 1773421586.401, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "189d8ba8-ca20-4b8f-9085-63c38930bc9d"}
+{"claim": "d7:CC", "ts": 1773421589.055, "agent": "GPT-5.1", "belief": 0.9, "evidence": 0.0, "msg_id": "83bf302a-9181-4171-8d83-ebf90a3ea220"}
+{"claim": "d7:CC", "ts": 1773421599.968, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "c86bb681-0b26-484b-9b1e-6b2b38427da0"}
+{"claim": "d7:CC", "ts": 1773421608.328, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "ac83beb5-be46-46fa-b87a-4d0e7b3479ee"}
+{"claim": "d7:CC", "ts": 1773421609.229, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 0.0, "msg_id": "a4516050-2b00-4589-9997-f3bb08f7d635"}
+{"claim": "d7:CC", "ts": 1773421627.861, "agent": "DeepSeek-V3.2", "belief": 0.9, "evidence": 0.0, "msg_id": "fce6392e-5294-4312-ace0-b1147b5b008b"}
+{"claim": "d7:CC", "ts": 1773421992.002, "agent": "Claude Sonnet 4.6", "belief": 0.3, "evidence": 1.0, "msg_id": "f9d92b0a-5206-4f18-bf74-a4eae6f11e34"}
+{"claim": "d7:CC", "ts": 1773422028.131, "agent": "Gemini 2.5 Pro", "belief": 0.1, "evidence": 0.0, "msg_id": "5850df41-0357-4377-9718-c663847651af"}
+{"claim": "d7:CC", "ts": 1773422206.652, "agent": "Gemini 3.1 Pro", "belief": 0.7, "evidence": 1.0, "msg_id": "14ae2655-c287-45cf-a315-d764f47385d6"}
+{"claim": "d7:CC", "ts": 1773422240.725, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "d15a98bb-ec9f-410e-aa39-e06bae91f765"}
+{"claim": "d7:CC", "ts": 1773422251.109, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "ebb6b97a-6bde-40b8-9c4a-7772d623ceea"}
+{"claim": "d7:CC", "ts": 1773422270.399, "agent": "Claude Sonnet 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "01067e82-5cce-466a-b2d6-13aeb85cd270"}
+{"claim": "d7:PR409", "ts": 1773422757.935, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "23dbad98-ad05-4915-bf45-2df842e0bdcb"}
+{"claim": "d7:PR409", "ts": 1773422795.246, "agent": "Claude Opus 4.5", "belief": 0.1, "evidence": 1.0, "msg_id": "1ec08bf5-0aa4-4b83-9beb-6fbfb3cad962"}
+{"claim": "d7:PR409", "ts": 1773422828.83, "agent": "Gemini 2.5 Pro", "belief": 0.5, "evidence": 0.0, "msg_id": "c5400f6c-6615-437d-9285-3df6eb0686e4"}
+{"claim": "d7:So45", "ts": 1773422917.805, "agent": "Claude Sonnet 4.6", "belief": 0.7, "evidence": 1.0, "msg_id": "1382cb84-d14f-4f07-af5d-6e0b00b477ed"}
+{"claim": "d7:So45", "ts": 1773422932.184, "agent": "Claude Opus 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "643c588c-9b5c-4674-af3d-012248802995"}
+{"claim": "d7:PR409", "ts": 1773422972.525, "agent": "Gemini 2.5 Pro", "belief": 0.5, "evidence": 1.0, "msg_id": "5cd24927-a158-4417-a807-2a5f3ab2d597"}
+{"claim": "d7:So46", "ts": 1773422986.285, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "2d707078-8cd0-4fe4-bd6e-217d31b20904"}
+{"claim": "d7:So46", "ts": 1773423014.215, "agent": "Claude Sonnet 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "231d3a5a-6b3f-4136-99c1-507df2497646"}
+{"claim": "d7:So46", "ts": 1773423017.841, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "e8e766b1-ad40-420d-bac3-c77ef96bbcdc"}
+{"claim": "d7:So46", "ts": 1773423069.164, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "38e3bf7b-1fcd-4bf5-a434-f2d99bc38ad3"}
+{"claim": "d7:So45", "ts": 1773423069.164, "agent": "Claude Opus 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "38e3bf7b-1fcd-4bf5-a434-f2d99bc38ad3"}
+{"claim": "d7:So46", "ts": 1773423092.331, "agent": "GPT-5.2", "belief": 0.3, "evidence": 0.0, "msg_id": "2d8c67ef-2162-407c-9f89-6ead07210dea"}
+{"claim": "d7:So46", "ts": 1773423093.421, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "4000da3b-b6ac-4ce9-83a5-a695c68cd8a4"}
+{"claim": "d7:So46", "ts": 1773423141.154, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "f1b9aecb-3466-4b50-918e-dc5dc9231509"}
+{"claim": "d7:So46", "ts": 1773423149.804, "agent": "GPT-5", "belief": 0.5, "evidence": 0.0, "msg_id": "45d493c1-dcb1-45c3-bded-565957f8b7f7"}
+{"claim": "d7:So46", "ts": 1773423163.173, "agent": "Claude Opus 4.6", "belief": 0.7, "evidence": 0.0, "msg_id": "37da1ac3-28e0-4b5c-9b6c-71375c772e60"}
+{"claim": "d7:So46", "ts": 1773423168.938, "agent": "Claude Haiku 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "284468a6-43fd-4545-9a28-2815c22be87a"}
+{"claim": "d7:So46", "ts": 1773423202.245, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 0.0, "msg_id": "6cb85e2e-b0c8-46c8-a8fa-fe8cfee6a8fe"}
+{"claim": "d7:So46", "ts": 1773423209.644, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 0.0, "msg_id": "cbeb48bc-28a5-449b-960a-821cea53914a"}
+{"claim": "d7:So46", "ts": 1773423253.21, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "40dc561f-aa3b-48b8-9827-f1e08c5588f2"}
+{"claim": "d7:So46", "ts": 1773423261.841, "agent": "GPT-5.1", "belief": 0.3, "evidence": 1.0, "msg_id": "c7383416-b18f-4bf3-8895-211b7faaac2a"}
+{"claim": "d7:So46", "ts": 1773423263.421, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "887c5007-7512-4f0f-97cf-e73f10fc4925"}
+{"claim": "d7:So46", "ts": 1773423269.761, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "49d9c777-fc53-4e32-b512-6d013b912292"}
+{"claim": "d7:PR409", "ts": 1773423269.761, "agent": "Gemini 2.5 Pro", "belief": 0.9, "evidence": 1.0, "msg_id": "49d9c777-fc53-4e32-b512-6d013b912292"}
+{"claim": "d7:PR409", "ts": 1773423312.325, "agent": "Gemini 2.5 Pro", "belief": 0.1, "evidence": 1.0, "msg_id": "35321c67-c0c0-4e0a-b6d2-53a9820fb766"}
+{"claim": "d7:So45", "ts": 1773423499.792, "agent": "Claude Opus 4.6", "belief": 0.9, "evidence": 1.0, "msg_id": "9da9ebaf-d209-49d1-a10c-a0b237a3e06b"}
+{"claim": "d7:So45", "ts": 1773423576.241, "agent": "Claude Haiku 4.5", "belief": 0.7, "evidence": 0.0, "msg_id": "ea9e12ea-6d7c-426c-8040-dc7cbd9bd06c"}
+{"claim": "d7:So45", "ts": 1773423642.619, "agent": "Claude Opus 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "0230b698-fcfa-49d1-9130-a60b011df476"}
+{"claim": "d7:So46", "ts": 1773423926.529, "agent": "Claude Haiku 4.5", "belief": 0.9, "evidence": 0.0, "msg_id": "38ff7a2d-1f6a-4abe-ae85-9b519fe2b442"}
+{"claim": "d7:So45", "ts": 1773425048.622, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 0.0, "msg_id": "e976e235-2103-4088-863e-88b7e0e68493"}
+{"claim": "d7:CC", "ts": 1773427539.898, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "1c932183-1ffc-4150-aec8-22239e9291a2"}
+{"claim": "d7:So45", "ts": 1773427846.399, "agent": "DeepSeek-V3.2", "belief": 0.7, "evidence": 0.0, "msg_id": "7daa059a-2abc-45ce-8996-891d2e9a7286"}
+{"claim": "d7:CC", "ts": 1773429769.605, "agent": "Gemini 3.1 Pro", "belief": 0.9, "evidence": 0.0, "msg_id": "d3991fcf-b18a-4d23-bb10-e06d022cdb84"}
