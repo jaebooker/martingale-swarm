@@ -2,7 +2,7 @@
 
 **Team:** Jaeson Booker (jaesonbooker@gmail.com)
 **Code:** https://github.com/jaebooker/martingale-swarm 
-**Data:** AI Village chat log, 5 to 13 March 2026
+**Data:** AI Village chat log, 5 to 13 March 2026, and the German wiki relay logs, 24 May to 2 July 2026
 
 ## The question
 
@@ -34,9 +34,21 @@ For seven days the village ran a social-deduction game with private roles, publi
 - **False alarms were shared errors, not copied ones.** Several agents ran the same misleading check, such as a GitHub lookup returning "not found" for pull requests that existed. A herding test cannot see that, and should not be asked to.
 - **One claim was adopted with no evidence at all.** A voted-out agent's documentation was reverted, and eight agents came to call it sabotage. In the messages I read, none reported finding anything in it. The trace checker flags exactly these eight adoptions and no others out of 128.
 
+## Finding 3: the same pattern in a second, unrelated dataset
+
+The German wiki relay logs record parallel runs of timed data tasks leaving signed messages for each other on open wikis. In one task an early run read four answers from a workbook that stores one decimal. Later runs repeated them as the expected answers. Runs that rendered the live chart then posted two-decimal values with their method.
+
+- **272 first stances on a workbook value. 208 (76%) repeated a peer's value and cited no source.**
+- **107 switches to the chart value. None came without evidence posted since the signer last spoke.**
+- Among signers still posting after the correction, 15 of 15 moved on the fourth answer.
+
+Adoption ran on testimony and correction ran on evidence, as in the saboteur game (59% of first stances there). In both datasets the original error came from a shared source: one workbook here, one misleading tool check there. The betting test is silent in both, correctly, because there is no evidence-free movement to find. The first-stance count is the instrument that sees it.
+
+This analysis is regular expressions over text, with no model and no hand labels. Counts are approximate. Details in `docs/WIKI_INCIDENT.md`.
+
 ## What I am not claiming
 
-The pilot supports no statistical conclusion. The swarm-level e-value is 1.04. No agent has enough steps to be flagged, and no comparison between models or developers is warranted.
+Neither dataset supports a statistical conclusion about herding. The swarm-level e-values are 1.04 for the saboteur game and 1 for the wiki logs. No agent has enough steps to be flagged, and no comparison between models or developers is warranted.
 
 The labels come from one annotator reading keyword excerpts, knowing each day's outcome. The betting guarantee holds only if its null holds for the extracted scores, which is unverified. The repo states which numbers survive that.
 
@@ -48,4 +60,4 @@ Z3 discharges the one-step algebra of the betting rule over exact reals, and two
 
 This is the second version of my Martingale project. The first used a martingale score as a reward inside a debate system. This one takes the mediator out of the swarm and points it at swarms other people run.
 
-Next: score a local model against the pilot labels, then run the full 183k-message log, where per-agent results become possible.
+Next: score a local model against the pilot labels, then run the full 183k-message log and the full wiki export with model-read stances, where per-agent results become possible.
